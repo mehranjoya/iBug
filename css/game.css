@@ -1,0 +1,92 @@
+/*
+##########################
+## iBug - Find the Bug! ##
+##########################
+## Created by - M.Joya  ##
+##########################
+
+### Game Stylesheet ##
+*/
+
+/* Game wrapper */
+.gameWrap {
+  max-width: 410px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* Game wrapper ends */
+
+/* Bug */
+.bug {
+  width: 100px;
+  height: 100px;
+  background: url('../img/bug.png') no-repeat;
+  background-position: center;
+  background-color: ;
+  background-size: 70%;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.blueBug {
+  background: url('../img/bugs/bug2.png') no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.redBug {
+  background: url('../img/bugs/bug3.png') no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+/* Bug ends */
+
+/* Timer */
+.timerSection {
+  display: inline;
+
+}
+#timer {
+  padding: 0px 10px;
+  margin: 0;
+  font-size: 135px;
+  font-weight: 500;
+  margin-top: 15px;
+  min-width: 125px;
+  display: inline-block;
+  color: #00aeef;
+}
+/* timer ends */
+
+/* Start button */
+#toggle {
+  width: 150px;
+  height: auto;
+  font-size: 60px;
+  padding:-10px;
+  font-family: iBug;
+  background: #00aeef;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  margin-top: 60px;
+}
+
+#reset{
+  width: 150px;
+  height: auto;
+  font-size: 30px;
+  font-family: iBug;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  display: none;
+  margin-top: -30px;
+
+}

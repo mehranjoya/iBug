@@ -1,0 +1,35 @@
+/*
+##########################
+## iBug - Find the Bug! ##
+##########################
+## Created by - M.Joya  ##
+##########################
+
+## Responsive Stylesheet #
+*/
+
+/* Mobile Device */
+@media screen and (max-width: 400px) {
+
+  form .inputTitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bug {
+    width: 60px;
+    height: 60px;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #header .logo img {
+    width: 200px !important;
+    margin: 0;
+    padding: 20px;
+  }
+
+}
+/* Mobile Device Ends*/

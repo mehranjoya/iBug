@@ -1,0 +1,17 @@
+<!-- Homepage - content -->
+
+<!-- Welcome message for logged in user -->
+<script>
+if(localStorage.loggedInUser !== undefined){
+
+  //Current user
+  var user = JSON.parse(localStorage[localStorage.loggedInUser]);
+
+  document.write("<h1 class='welcome'>Welcome "+ "<font color='blue'>" + user.username + ",</font></h1>");
+}
+</script>
+
+<!-- Play now banner -->
+<a href="?p=play"><img class="banner" src="img/banner-playnow.png" alt="iBug - Play Now!"></a>
+
+<!-- Homepage content ends -->

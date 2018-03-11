@@ -1,0 +1,25 @@
+<!-- Register page - content -->
+<div id="registrationSection">
+
+  <br><br>
+
+  <!-- Registration form starts -->
+  <form class="login" id="login" onsubmit="return false">
+    <div class="inputTitle">Name:</div> <input type="text" id="name" name="name"><br>
+    <div class="inputTitle">Username:*</div> <input type="text" id="username" name="username"><br>
+    <div class="inputTitle">Email:</div> <input type="email" id="email" name="email"><br>
+    <div class="inputTitle">Std/StaffID:</div> <input type="text" id="sID" name="sid"><br>
+    <div class="inputTitle">Password:*</div> <input type="password" id="password" name="password"><br>
+    <div class="inputTitle">Re-Password:*</div> <input type="password" id="rePassword"><br>
+
+    <button type="submit" onclick="registerUser()" name="login">REGISTER</button>
+  </form>
+  <!-- Registration form ends -->
+
+  <!-- Registration result output -->
+  <p style="text-align: center;" id="message"></p>
+
+  <!-- Link to login page -->
+  <p style="text-align: center;">Already registered? <a href="?p=login">Login Here</a></p>
+</div>
+<!-- Register page content ends -->

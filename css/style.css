@@ -1,0 +1,217 @@
+/*
+##########################
+## iBug - Find the Bug! ##
+##########################
+## Created by - M.Joya  ##
+##########################
+
+### Template Stylesheet ##
+*/
+
+/* Fonts */
+@font-face {
+    font-family: iBug;
+    src: url(ibug.otf);
+}
+/* Fonts end */
+
+body {
+  margin: 0 0 100px;
+  font-family: iBug;
+  font-size: 40px;
+  padding: 50px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/* Welcome message */
+.welcome {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
+/* Header */
+#header {
+  display: block;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#header .logo img {
+  width: 400px;
+  margin: 0;
+  padding: 20px;
+}
+/* Header Ends*/
+
+/* Navigation */
+#nav {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.active {
+  background-color: #ed1c25 !important;
+  font-size: 10px;
+}
+
+#nav a {
+  list-style: none !important;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #00aeef;
+  border-radius: 6px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#nav a:hover {
+  background-color: #009cd6;
+}
+/* Navigation Ends */
+
+/* Content */
+#content{
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.content{
+  padding: 40px;
+  background-color: #ffffffcf;
+  border-radius: 5px;
+  margin: 20px;
+
+}
+
+.pageContent {
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.banner{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+/* Content Ends */
+
+
+
+
+/* Scoreboard */
+.scoreboard {
+  width: 100%;
+  padding: 0 !important;
+  border-spacing: 0;
+  border: none;
+}
+
+.scoreboard, th{
+  border: 1px solid black;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.scoreboard tr {
+  height: 30px;
+
+}
+
+.scoreboard tr:first-child {
+  height: 50px;
+  background-color: #00aeef;
+  border: 1px solid #00aeef;
+  color: #FFFFFF;
+}
+/* Scoreboard Ends */
+
+/* Form */
+form {
+  width: 90%;
+  max-width: 420px;
+  background: #00aeef;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+}
+
+form input {
+  height: 30px;
+  display: inline-block;
+  margin: 10px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+form .inputTitle {
+  display: inline-block;
+  text-align: right;
+  min-width: 130px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 50px;
+  padding: 0px 10px;
+  font-family: iBug;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  max-width: 390px;
+  margin: 10px auto;
+}
+
+form button:hover {
+  background-color: #404040;
+  cursor: pointer;
+
+}
+/* Form Ends */
+
+/* Footer */
+#footer {
+  height: 80px;
+  position: absolute;
+  background-color: #00aeef;
+  margin: 0 auto;
+  max-width: 900px;
+  bottom: 0;
+  left: 10;
+  right: 10;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+
+}
+
+#footer p {
+  color: white;
+  margin-top: 38px;
+  font-family: roboto !important;
+  font-size: 14px;
+}
+/* Footer Ends */

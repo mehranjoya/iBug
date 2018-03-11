@@ -1,0 +1,66 @@
+<!-- Scoreboard page - content -->
+  <table class="scoreboard">
+    <tr>
+      <th>#</th>
+      <th>PLAYER</th>
+      <th>TIME</th>
+    </tr>
+
+    <script type="text/javascript">
+      //Scoreboard Function
+      function scoreBoard(){
+
+        //Set scores array variable
+        var scores = [];
+
+        //Loop through localStorage
+        for ( var i = 0, len = localStorage.length; i < len; ++i ) {
+
+          //Make sure that the current key is not "loggedInUser"
+          if(localStorage.key(i) !== "loggedInUser"){
+
+            var key = localStorage.key(i);
+            var usr = JSON.parse(localStorage.getItem(key));
+
+            //Create an array storing users name and score
+            var usrScore = [usr.username, usr.score];
+
+            //Store userScore array to scores array
+            scores.push(usrScore);
+          }
+        }
+
+        //Sorting the user scores
+
+        //temp variable
+        var temp;
+
+        //Loop through the array sorting the conent by scores of users
+        for(var j=0; j < scores.length - 1; j++){
+          for(var k= j + 1; k < scores.length; k++){
+            if(scores[j][1] > scores[k][1]){
+              temp = scores[k];
+              scores[k] = scores[j];
+              scores[j] = temp;
+            }
+          }
+        }
+
+        //Display the user scores
+        for(var i=0; i < scores.length; i++){
+          document.write("<tr>");
+          document.write("<th>"+ (i + 1) +"</th>");
+          document.write("<th>"+ scores[i][0] +"</th>");
+          document.write("<th>"+ scores[i][1] +"</th>");
+          document.write("</tr>");
+        }
+
+      }
+
+      //Call the scoreBoard function
+      scoreBoard();
+    </script>
+    
+  </table>
+
+<!-- Scoreboard page content ends -->
