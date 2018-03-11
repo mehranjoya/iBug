@@ -1,2 +1,2 @@
 # iBug
-An interactive game website implemented in Javascript, HTML and CSS
+An interactive game website implemented in Javascript, HTML and CSS.
